@@ -4,19 +4,15 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class IncomeRequest {
-    private String userId; // BARU
     private BigDecimal amount;
     private String category;
     private String description;
     private LocalDate date;
-    private String akun;   // BARU (Gopay, Ovo, BCA, dll)
+    private String akun;   // (Gopay, Ovo, BCA, dll)
 
     public IncomeRequest() {}
 
     // Getter dan Setter
-    public String getUserId() { return userId; }
-    public void setUserId(String userId) { this.userId = userId; }
-
     public BigDecimal getAmount() { return amount; }
     public void setAmount(BigDecimal amount) { this.amount = amount; }
 
